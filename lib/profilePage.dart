@@ -14,7 +14,7 @@ class _profilePageState extends State<profilePage> {
   Widget build(BuildContext context) {
     
     return Scaffold(
-      backgroundColor: Colors.blue,
+    backgroundColor: Color.fromRGBO(133, 244, 255, 1),
       body: Center(child: 
       Text("profile")),
     );

@@ -13,7 +13,7 @@ class _homePageState extends State<homePage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: Colors.black,
+    backgroundColor: Color.fromRGBO(133, 244, 255, 1),
       body: Text("homepage"),
     );
   }

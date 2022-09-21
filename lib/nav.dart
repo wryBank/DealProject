@@ -41,13 +41,11 @@ class _navState extends State<nav> {
     onTap: (index){
       setState(() {
         _page = index;
-        print(_page);
-        print(screen[_page].toString());
       });
     },
     ),
     appBar: AppBar(title: Text("title"),
-    backgroundColor: Colors.white.withOpacity(0.25),
+    backgroundColor: Color.fromRGBO(66, 194, 255, 1),
     centerTitle: true,
     leading: IconButton(icon: Icon(FontAwesomeIcons.bars), onPressed: () 
     {  
