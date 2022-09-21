@@ -1,5 +1,6 @@
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:deal/homePage.dart';
 import 'package:deal/notificationPage.dart';
 import 'package:deal/profilePage.dart';
 import 'package:flutter/material.dart';
@@ -8,18 +9,18 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class home extends StatefulWidget {
-  const home({Key? key}) : super(key: key);
+class nav extends StatefulWidget {
+  const nav({Key? key}) : super(key: key);
 
   @override
-  State<home> createState() => _homeState();
+  State<nav> createState() => _navState();
 }
 
-class _homeState extends State<home> {
+class _navState extends State<nav> {
   GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
   int _page = 0;
   final screen = [
-    home(),
+    homePage(),
     profilePage(),
     notificationPage()
   ];
@@ -45,7 +46,21 @@ class _homeState extends State<home> {
       });
     },
     ),
-    appBar: AppBar(title: Text('home')),
+    appBar: AppBar(title: Text("title"),
+    backgroundColor: Colors.white.withOpacity(0.25),
+    centerTitle: true,
+    leading: IconButton(icon: Icon(FontAwesomeIcons.bars), onPressed: () 
+    {  
+    },
+    ),
+    actions: [
+      IconButton(
+        icon: Icon(FontAwesomeIcons.bars), 
+         onPressed: (){
+      }
+      ) 
+    ],
+    ),
     body:screen[_page]
     );
     

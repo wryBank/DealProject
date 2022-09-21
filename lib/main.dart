@@ -1,4 +1,4 @@
-import 'package:deal/home.dart';
+import 'package:deal/nav.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Deal Demo',
-      home: home(),
+      home: nav(),
       theme: ThemeData(
         primaryColor: Color.fromRGBO(133, 244, 255, 1),
         backgroundColor: Color.fromRGBO(133, 244, 255, 1)
