@@ -1,3 +1,4 @@
+import 'package:deal/authOTP.dart';
 import 'package:deal/nav.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Deal Demo',
-      home: nav(),
+      home: authOTP(),
       theme: ThemeData(
         primaryColor: Color.fromRGBO(133, 244, 255, 1),
         backgroundColor: Color.fromRGBO(133, 244, 255, 1)

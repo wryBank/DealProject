@@ -15,8 +15,8 @@ class _profilePageState extends State<profilePage> {
     
     return Scaffold(
     backgroundColor: Color.fromRGBO(133, 244, 255, 1),
-      body: Center(child: 
-      Text("profile")),
+    body: Center(child: 
+    Text("profile")),
     );
   }
 }
